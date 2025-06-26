@@ -1,5 +1,5 @@
-sudo: required
 language: generic
+sudo: required
 services:
   - docker
 
@@ -8,3 +8,4 @@ before_install:
 
 script:
   - docker run -e CI=true somnus74/docker-tute npm run test
+
